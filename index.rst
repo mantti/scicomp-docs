@@ -2,6 +2,9 @@
 Narvi user guide for combined FGCI-kickstart
 =================
 
+This site is currently placeholder for 
+:doc:`FGCI kickstart Tampere <training/scip/summer-kickstart>`
+
 Narvi is the Tampere University high-performance computing cluster.  It serves all
 researchers
 of TAU, but is currently by `TCSC <https://wiki.eduuni.fi/display/tuttcsc/TCSC+Home>`_. 
