@@ -42,7 +42,8 @@ University specific information:
 
 * `University of Helsinki <https://wiki.helsinki.fi/display/it4sci/HPC+SUMMER+KICKSTART>`__
 
-* Tampere:
+* Tampere: this course is recommended for all new Narvi users and also all
+  interested in HPC `Basic information is at Narvi page <https://wiki.eduuni.fi/display/tuttcsc/Narvi+Cluster>`__
 
 
 Practical information
@@ -101,7 +102,7 @@ informal help session to get you started with the computing resources.
     * Aalto: :doc:`/triton/usage/workflows`
     * Helsinki: `Remote access to university resources
       <https://wiki.helsinki.fi/display/it4sci/Remote+access+to+University+resources>`__
-    * Tampere:
+    * Tampere: :doc:`/narvi/usage/workflows`
 
   * Module #1.5 (.5h): **Connecting to the cluster** // tutorial //
     Get connected in preparation for day 2 // Enrico Glerean
@@ -110,7 +111,7 @@ informal help session to get you started with the computing resources.
       </triton/tut/connecting>` – if you can ssh to Triton and run
       ``hostname``, you are ready for tomorrow.
     * Helsinki:
-    * Tampere:
+    * Tampere: :doc: `Connecting to Narvi </narvi/tut/connecting>`
 
 * **Day #2 (Tue 9.jun):**
 
@@ -124,7 +125,7 @@ informal help session to get you started with the computing resources.
 
       * Aalto: (link above)
       * Helsinki:
-      * Tampere:
+      * Tampere: :doc:`/narvi/tut/connecting`
 
     * :doc:`/triton/tut/applications`
     * :doc:`/triton/tut/modules`
@@ -133,6 +134,9 @@ informal help session to get you started with the computing resources.
       * Aalto: (link above)
       * Helsinki:
       * Tampere:
+            * :doc:`/narvi/tut/applications`
+            * :doc:`/narvi/tut/modules`
+            * :doc:`/narvi/tut/storage`
 
     * :doc:`/triton/tut/interactive`
     * :doc:`/triton/tut/serial`
