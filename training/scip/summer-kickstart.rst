@@ -102,7 +102,7 @@ informal help session to get you started with the computing resources.
     * Aalto: :doc:`/triton/usage/workflows`
     * Helsinki: `Remote access to university resources
       <https://wiki.helsinki.fi/display/it4sci/Remote+access+to+University+resources>`__
-    * Tampere: `Tampere workflows <https://narvi-docs.readthedocs.io/narvi/usage/workflows>`__
+    * Tampere: `Tampere workflows <https://narvi-docs.readthedocs.io/narvi/usage/workflows.html>`__
 
   * Module #1.5 (.5h): **Connecting to the cluster** // tutorial //
     Get connected in preparation for day 2 // Enrico Glerean
@@ -111,7 +111,7 @@ informal help session to get you started with the computing resources.
       </triton/tut/connecting>` – if you can ssh to Triton and run
       ``hostname``, you are ready for tomorrow.
     * Helsinki:
-    * Tampere: :doc: `Connecting to Narvi <https://narvi-docs.readthedocs.io/narvi/tut/connecting.html>`__
+    * Tampere: `Connecting to Narvi <https://narvi-docs.readthedocs.io/narvi/tut/connecting.html>`__
 
 * **Day #2 (Tue 9.jun):**
 
@@ -125,7 +125,7 @@ informal help session to get you started with the computing resources.
 
       * Aalto: (link above)
       * Helsinki:
-      * Tampere: `<https://narvi-docs.readthedocs.io/narvi/tut/connecting.html>`__
+      * Tampere: `Connecting to Narvi <https://narvi-docs.readthedocs.io/narvi/tut/connecting.html>`__
 
     * :doc:`/triton/tut/applications`
     * :doc:`/triton/tut/modules`
@@ -134,7 +134,7 @@ informal help session to get you started with the computing resources.
       * Aalto: (link above)
       * Helsinki:
       * Tampere:
-            * :doc:`<https://narvi-docs.readthedocs.io/narvi/tut/storage.html>`__
+            * `Narvi storage <https://narvi-docs.readthedocs.io/narvi/tut/storage.html>`__
 
     * :doc:`/triton/tut/interactive`
     * :doc:`/triton/tut/serial`
@@ -147,6 +147,7 @@ informal help session to get you started with the computing resources.
 
     * :doc:`/triton/tut/array`
     * :doc:`/triton/tut/gpu`
+      * Tampere: `Narvi GPU computing <https://narvi-docs.readthedocs.io/narvi/tut/gpu.html>`__
     * :doc:`/triton/tut/parallel`
 
   * Module #3.2 (1.5h): **HTCondor** (at Aalto) // lecture with demos
