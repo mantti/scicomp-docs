@@ -14,58 +14,49 @@ Quick contents and links
 
 .. list-table::
 
-   * * **Triton contents**
+   * * **Narvi contents**
 
-       * About Triton
+       * About Narvi
 
-         * :doc:`overview`
-         * :doc:`usagepolicy`
-	 * :doc:`acknowledgingtriton`
-	 * `Aalto Science-IT <http://science-it.aalto.fi>`_ (external
-	   link)
+         * :doc:`triton/overview`
+         * :doc:`triton/usagepolicy`
 
        * :doc:`Getting Help/Contact <help>`
 
-	 * `Triton issue tracker <https://version.aalto.fi/gitlab/AaltoScienceIT/triton/issues>`_
-	   (most requests here, login with HAKA)
 	 * `Suggestions for good support requests
 	   <https://docs.csc.fi/support/support-howto/>`_
 
-       * :doc:`Quick Reference <ref/index>`
+       * :doc:`Quick Reference <triton/ref/index>`
 
        * Tutorials (start here)
 
-	 * :doc:`accounts`
-	 * :doc:`tut/intro`
-	 * :doc:`tut/connecting`
-	 * :doc:`tut/applications`
-	 * :doc:`tut/modules`
-	 * :doc:`tut/storage`
-	 * :doc:`tut/interactive`
-	 * :doc:`tut/serial`
-         * :doc:`tut/array`
-         * :doc:`tut/dependency`
-	 * :doc:`tut/gpu`
-	 * :doc:`tut/parallel`
+	 * :doc:`narvi/accounts`
+	 * :doc:`triton/tut/intro`
+	 * :doc:`narvi/tut/connecting`
+	 * :doc:`narvi/tut/applications`
+	 * :doc:`triton/tut/modules`
+	 * :doc:`narvi/tut/storage`
+	 * :doc:`triton/tut/interactive`
+	 * :doc:`triton/tut/serial`
+         * :doc:`triton/tut/array`
+         * :doc:`triton/tut/dependency`
+	 * :doc:`triton/tut/gpu`
+	 * :doc:`triton/tut/parallel`
 
        * Cluster usage details
 
 	 * Parallel jobs (coming, for now see :doc:`usage/general`)
-	 * :doc:`usage/gpu`
+	 * :doc:`triton/usage/gpu`
 
        * :ref:`Applications <apps>`
 
        For full contents, see below.
 
-     * **News**
-
        **Shortcuts**
 
-       * `Issue tracker <https://version.aalto.fi/gitlab/AaltoScienceIT/triton/issues>`_
-       * `Quick Reference <ref/index>`
+       * `Quick Reference <triton/ref/index>`
        * `Triton Cheatsheet <https://aaltoscicomp.github.io/cheatsheets/triton-cheatsheet.pdf>`_
-       * `Triton FAQ <usage/faq>`
-       * `Scicomp Garage </news/garage>`
+       * `Triton FAQ <triton/usage/faq>`
 
        **Scientific computing resources**
 
