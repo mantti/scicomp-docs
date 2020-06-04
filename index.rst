@@ -1,139 +1,160 @@
-.. Triton user guide documentation master file, created by
-   sphinx-quickstart on Thu Jun 15 12:18:55 2017.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+=================
+Narvi user guide for combined FGCI-kickstart
+=================
 
-==========================
-Aalto Scientific Computing
-==========================
+Narvi is the Tampere University high-performance computing cluster.  It serves all
+researchers
+of TAU, but is currently by `TCSC <https://wiki.eduuni.fi/display/tuttcsc/TCSC+Home>`_. 
+It is similar to the CSC
+clusters, though CSC clusters are larger and Narvi is easier to use
+because it is more integrated into the local environment.
 
-This contains documentation about scientific and data-intensive computing
-at Aalto and beyond.  It is targeted towards Aalto researchers, but
-has some useful information for everyone.  The data management section
-is useful even to non-computational researchers.
+Quick contents and links
+========================
 
-These docs are maintained by `Aalto Science-IT
-<http://science-it.aalto.fi>`_ with the help of the Aalto community.
+.. list-table::
+
+   * * **Triton contents**
+
+       * About Triton
+
+         * :doc:`overview`
+         * :doc:`usagepolicy`
+	 * :doc:`acknowledgingtriton`
+	 * `Aalto Science-IT <http://science-it.aalto.fi>`_ (external
+	   link)
+
+       * :doc:`Getting Help/Contact <help>`
+
+	 * `Triton issue tracker <https://version.aalto.fi/gitlab/AaltoScienceIT/triton/issues>`_
+	   (most requests here, login with HAKA)
+	 * `Suggestions for good support requests
+	   <https://docs.csc.fi/support/support-howto/>`_
+
+       * :doc:`Quick Reference <ref/index>`
+
+       * Tutorials (start here)
+
+	 * :doc:`accounts`
+	 * :doc:`tut/intro`
+	 * :doc:`tut/connecting`
+	 * :doc:`tut/applications`
+	 * :doc:`tut/modules`
+	 * :doc:`tut/storage`
+	 * :doc:`tut/interactive`
+	 * :doc:`tut/serial`
+         * :doc:`tut/array`
+         * :doc:`tut/dependency`
+	 * :doc:`tut/gpu`
+	 * :doc:`tut/parallel`
+
+       * Cluster usage details
+
+	 * Parallel jobs (coming, for now see :doc:`usage/general`)
+	 * :doc:`usage/gpu`
+
+       * :ref:`Applications <apps>`
+
+       For full contents, see below.
+
+     * **News**
+
+       **Shortcuts**
+
+       * `Issue tracker <https://version.aalto.fi/gitlab/AaltoScienceIT/triton/issues>`_
+       * `Quick Reference <ref/index>`
+       * `Triton Cheatsheet <https://aaltoscicomp.github.io/cheatsheets/triton-cheatsheet.pdf>`_
+       * `Triton FAQ <usage/faq>`
+       * `Scicomp Garage </news/garage>`
+
+       **Scientific computing resources**
+
+       * `SCIP – Scientific Computing in Practice courses
+	 <http://science-it.aalto.fi/scip/>`_: organized
+	 by Science IT. Including Triton kickstarts and many others
+       * `Parallel computing <https://wiki.aalto.fi/download/attachments/65022076/parallel_computing.2012-04-12.pdf?version=1&modificationDate=1334828664000&api=v2>`_
+       * `Aalto IT Services for Research <https://www.aalto.fi/en/services/it-services-for-research>`_
+       * `Software Carpentry <https://software-carpentry.org/>`_
+	 (scientific computation basics) and
+	 `Code Refinery <https://coderefinery.org/>`_ (more focused on
+	 programming techniques)
+
+       **General links**
+
+       * `CSC <https://www.csc.fi/>`_ - Finland's academic computing center.
+       * `FGCI user's guide
+	 <https://docs.csc.fi/cloud/fgci/fgci-user-guide-overview/>`_ at CSC: That is a
+	 general Guide to FGCI resources. Triton is one of them.
+       * `CSC HPC guides
+	 <https://research.csc.fi/guides>`_ at CSC: a
+	 Triton like cluster at CSC. Similar setup, thus examples and
+	 instructions can be useful.
+       * `Aalto research data management information <https://www.aalto.fi/en/services/research-data-management-rdm-and-open-science>`_
+
+
+
+Overview
+========
 
 .. toctree::
    :maxdepth: 1
 
-   aalto/welcomeresearchers
-   aalto/welcomestudents
+   overview.rst
+   help.rst
+   accounts.rst
+   usagepolicy.rst
+   acknowledgingtriton.rst
 
-News
-====
+.. _tutorials:
+
+Tutorials
+=========
+These are designed to be read in-order by every Triton user when they
+get their accounts (except maybe the last ones).
+
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
-   news/index
+   tut/intro.rst
+   tut/connecting.rst
+   tut/applications.rst
+   tut/modules.rst
+   tut/storage.rst
+   Interactive jobs: running your first command <tut/interactive>
+   Serial jobs: running in the queue <tut/serial>
+   tut/array.rst
+   tut/gpu.rst
+   tut/parallel.rst
+   tut/dependency.rst
 
-
-
-The Aalto environment
+Detailed instructions
 =====================
-Aalto provides a wide variety of support for scientific computing.
-For a summary, see the `IT Services for Research page
-<https://www.aalto.fi/en/services/it-services-for-research>`_.
-For information about data storage at Aalto, see the section on data
-management below.
-
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
+   :glob:
 
-   aalto/index
+   usage/*
 
-Cheatsheets: `CS <ch-cs_>`_, `Data <ch-data_>`_.
+.. _application-list:
+.. _apps:
 
-.. _ch-cs: https://aaltoscicomp.github.io/cheatsheets/cs-cheatsheet.pdf
-.. _ch-data: https://aaltoscicomp.github.io/cheatsheets/sci-data-cheatsheet.pdf
+Applications
+============
 
-
-
-Data management
-===============
-In this section, you can find some information and instructions on data
-management.  Concrete information: :doc:`main Aalto services
-<aalto/aaltostorage>` and :doc:`global services <data/services>`.
-Main Theoretical information: :doc:`Aalto-specific summary
-<data/outline>` and `Aalto's
-Research Data Management pages
-<https://www.aalto.fi/en/services/research-data-management-rdm-and-open-science>`_.
-
-.. toctree::
-   :maxdepth: 2
-
-   data/index
-
-Cheatsheets: `Data <ch-data_>`_, `A4 Data management plan <ch-dmpA4_>`_.
-
-.. _ch-dmpA4: https://aaltoscicomp.github.io/cheatsheets/DMP-A4-both.pdf
-
-
-
-Triton
-======
-Triton is the Aalto high performance computing cluster.  It is your
-go-to resources for anything that exceeds your desktop computer's
-capacity.
-
-.. toctree::
-   :maxdepth: 2
-
-   triton/index
-
-Cheatsheets: `Triton <ch-triton_>`_
-
-.. _ch-triton: https://aaltoscicomp.github.io/cheatsheets/triton-cheatsheet.pdf
-
-
-
-Scientific computing
-====================
-In this section, you find general (not Aalto specific) scientific
-computing resources.
-
-.. toctree::
-   :maxdepth: 2
-
-   scicomp/index
-
-Cheatsheets: `git for normal people <ch-gfnp_>`_, `Gitlab (produced by Gitlab, with Aalto link) <ch-gitlab_>`_
-
-.. _ch-gfnp: https://aaltoscicomp.github.io/cheatsheets/git-for-normal-people-cheatsheet_1.0.pdf
-.. _ch-gitlab: https://aaltoscicomp.github.io/cheatsheets/git-cheatsheet.pdf
-
-
-
-Training
-========
-
-We have various recommended training courses for researchers who deal
-with computation and data.  These courses are selected by researchers,
-for researchers and grouped by level of skill needed.
-
-.. toctree::
-   :maxdepth: 2
-
-   training/index
-
-
-
-Metadocs
-========
-
-These docs are open source: all content is licensed under CC-BY 4.0
-and all examples under CC0 (public domain).  Additionally, this is an
-*open project* and we *strongly* encourage anyone to :doc:`contribute
-<README>`.  For information, see the :doc:`README` and the Github
-links at the top of every page.  Either make Github issues, pull
-requests, or ask for direct commit access.  Be bold: the biggest
-problem is missing information, and mistakes can always be fixed.
+See our :doc:`general information <apps/index>` and the full list below:
 
 .. toctree::
    :maxdepth: 1
+   :glob:
 
-   README
+   apps/index
+   apps/*
 
-* :ref:`genindex`
-* :ref:`search`
+
+Reference and Examples
+======================
+.. toctree::
+   :maxdepth: 1
+
+   ref/index
+   examples/index
