@@ -22,6 +22,9 @@ Quick list of differences
    * * Accessing cluster
      * We are accessible from everywhere with proper ssh key.
      * :doc:`tut/connecting`
+   * * Remote workflows
+     * Currently we don't have Jupyterhub or VDI-images available.
+     * :doc:`usage/workflows`
    * * Installed software
      * Most software is common to all FGCI-cluster but we (also) have local specifics
      * TODO
