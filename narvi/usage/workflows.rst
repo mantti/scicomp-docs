@@ -4,8 +4,8 @@ Remote workflows at Tampere University
 
 .. note::
 
-   The more specific remote access instructions for scicomp is at
-   https://wiki.eduuni.fi/display/tuttcsc/Connecting+to+cluster. 
+   The more specific remote access instructions for narvi is at
+   `TCSC Eduuni wikispace <https://wiki.eduuni.fi/display/tuttcsc/Connecting+to+cluster>`__. 
    This page explains the options, including other systems.
 
 
@@ -49,8 +49,8 @@ Summary table for remote data analysis workflows
      * Not good for personal or confidential data. Computing resources might not be enough. Accessing large data remotely stored at Aalto might be problematic - you will end up having to copy a lot.  You have to manage software yourself.
      * Excellent for prototyping, working on the go, doing tests, interactive work (e.g. making figures). Don’t use it with large data or confidential / personal data.
      * N
-   * * 2. TUNI laptop
-     * Same as above, plus same tools available as Aalto employer.
+   * * 2. TUNI workstation
+     * Same as above, plus same tools available as TUNI employer.
      * Same as above.
      * Same as above.
      * N
@@ -58,11 +58,6 @@ Summary table for remote data analysis workflows
      * Computing happens on remote. Data access happens on remote, so it is more secure.
      * Computing resources and storage space are limited.
      * Excellent for prototyping, working on the go, doing tests, interactive work (e.g. making figures). More secure access to data.
-     * Y
-   * * 4. Aalto Jupyterhub (https://jupyter.triton.aalto.fi)
-     * Cloud based - resume work from anywhere.  Includes command line (#6) and batch (#7) easily.  Same data as seen on Triton (/scratch/dept/ and /work/ folders)
-     * Jupyter can `become a mess if you aren't careful <https://scicomp.aalto.fi/scicomp/jupyter-pitfalls.html>`__.  You need to plan to scale up with #7 eventually, once your needs increase.
-     * Excellent for prototyping, working on the go, doing tests, interactive work (e.g. making figures).  Secure access to data. Use if you know you need to switch to batch jobs eventually (7).
      * Y
    * * 4. Interactive graphical session on narvi HPC (ssh -X `narvi-shell <https://wiki.eduuni.fi/display/tuttcsc/Narvi+Shell> `__)
      * Graphical programs.
@@ -104,10 +99,10 @@ Summary table for remote data analysis workflows
 
 **Pros/Cons/Recommendation**: see option 1 above.  But, when on TUNI networks, you have easier access to TUNI storage systems.
 
-3. Remote virtual machine with VDI
+3. Remote desktop
 ----------------------------------
 
-**Description**: You might be working with very large datasets or with confidential/personal data, so that you cannot or do not want to copy the data to your local computer. Sometimes you use many computers, but would like to connect to “the same computer” from remote where a longer analysis script might be crunching numbers. Aalto has a solution called VDI https://vdi.aalto.fi (`description at aalto.fi <https://www.aalto.fi/en/services/vdiaaltofi-how-to-use-aalto-virtual-desktop-infrastructure>`__) where you can get access to a dedicated virtual machine from remote within the web browser. Once logged in, you can pick if you prefer Aalto Linux or Aalto Windows, and then you see the same interface that you would see if you logged in from an Aalto dedicated workstation.  To access Triton data from the Linux one, use the path /m/{dept}/scratch/ (just like Aalto desktops).
+**Description**: You might be working with very large datasets or with confidential/personal data, so that you cannot or do not want to copy the data to your local computer. Sometimes you use many computers, but would like to connect to “the same computer” from remote where a longer analysis script might be crunching numbers. 
 
 **Pros**: The computing processes are not going to run on your local computer, computing happens on remote which means that you can close your internet connection, have a break, and resume the work where you left it. There is no need to copy the data locally as all data stays on remote and is accessed as if it was a desktop computer from the campus.
 
@@ -115,19 +110,7 @@ Summary table for remote data analysis workflows
 
 **Recommendation**: VDI is excellent when you need a graphic interactive session and access to large data or to personal/confidential data without the risks of data breach. Use VDI for small analysis or interactive development, we do not recommend it when the executing time of your scripts starts to be bigger than a 7 hours working day.
 
-4. Aalto Jupyterhub
--------------------
-
-**Description**: Jupyter notebooks are a way of interactive, web-based computing: instead of either scripts or interactive shells, the notebooks allow you to see a whole script + output and experiment interactively and visually. They are good for developing and testing things, but once things work and you need to scale up, it is best to put your code into proper programs. Triton’s JupyterHub is available at https://jupyter.triton.aalto.fi . Read more about it at: https://scicomp.aalto.fi/triton/apps/jupyter.html. `Triton account required <https://scicomp.aalto.fi/triton/accounts.html>`__.
-
-**Pros**: JupyterHub it has similar advantages than #4, although data and code are accessed through the JupyterHub interface.  In addition, things can stay running in the cloud.  Although it can be used with R or Matlab, Python users will most likely find this to be a very familiar and comfortable prototyping environment. Similar to the VDI case, you can resume workflow (there are sessions of different lengths).  You also also access Triton shell and batch (#6, #7) in the Jupyter interface, and it's easy to scale up and use them all together.
-
-**Cons**: You are limited to the Jupyter interface (but you can upload/download data, and integrate with many other things). Jupyter can `become a mess if you aren't careful <https://scicomp.aalto.fi/scicomp/jupyter-pitfalls.html>`__. Computationally, an instance will always have limited CPUs and memory.  Once you need more CPU/RAM, look into options #6 and #7 - they work seamlessly with the same data, software, etc.
-
-**Recommendation**: Good for exploration and prototyping, access to large dataset, access to confidential/personal data. For more computational needs, be ready to switch to batch jobs (#7) once you are done prototyping.
-
-
-5. Interactive graphical session on Triton HPC
+4. Interactive graphical session via narvi-shell
 ----------------------------------------------
 
 **Description**: Sometimes what you can achieve with your own laptop or with VDI is not enough when it comes to computing resources. However, your workflow does not yet allow you to go fully automatic as you still need to manually interact with the analysis process (e.g. point-click analysis interfaces, doing development work, making figures, etc). An option is to connect to triton.aalto.fi with a graphical interface. This is usually done with ssh -X triton.aalto.fi. For example you can do it from a terminal within a VDI Linux session. Once connected to the triton log-in node, you can then request a dedicated interactive node with command ``sinteractive``, and you can also specify the amount of CPU or RAM you need (link to sinteractive help page). `Triton account required <https://scicomp.aalto.fi/triton/accounts.html>`__.
@@ -139,7 +122,7 @@ Summary table for remote data analysis workflows
 **Recommendation**: This might be one of the best scenarios for working from remote with an interactive graphical session. Although you cannot keep the session open for more than 24 hours, you can still work on your scripts/code/figures interactively without any limitation and without any risks of data breaches.
 
 
-6. Interactive command line only session on Triton HPC/dept workstation
+5. Interactive command line only session on Narvi
 -----------------------------------------------------------------------
 
 **Description**: sometimes you do not really need a graphical interface because you are running interactively scripts that do not produce or need a graphical output. This is the same case as sinteractive above, but without the limitation of the 24h session. The best workflow is to: 1) connect to triton ``ssh triton.aalto.fi`` 2) start a screen/tmux session that can be detached / reattached in case you lose the internet connection or in case you need to leave the interactive script running for days 3) request a dedicated interactive terminal with command ``srun -p interactive --time=HH:MM:SS --mem=nnG --pty bash`` (see other examples at https://scicomp.aalto.fi/triton/tut/interactive.html or https://scicomp.aalto.fi/triton/usage/gpu.html for interactive GPU) 4) get all your numbers crunched and remember to close it once you are done. Please note that, if you have a dedicated Linux workstation at a department at Aalto, you can also connect to your workstation and use it as a remote computing node fully dedicated to you. The resources are limited to your workstation, but here you won’t have the time constraint or the need to queue for resources if Triton’s queue is overcrowded. `Triton account required <https://scicomp.aalto.fi/triton/accounts.html>`__.
@@ -150,7 +133,7 @@ Summary table for remote data analysis workflows
 
 **Recommendation**: this is the best option when you need long-lasting computing power and large data/confidential data access with interactive input from the user. This is useful once you have your analysis pipeline/code fully developed so that you can just run the scripts in command line mode. Post processing/figure making can then happen interactively once your analysis is over.
 
-7. Non-interactive batch computing on Triton HPC
+6. Non-interactive batch computing on Triton HPC
 ------------------------------------------------
 
 **Description**: this is the case when no interactive input is needed to process your data. This is extremely useful when you are going to perform the same analysis code for hundreds of time. Please check more detailed descriptions at https://scicomp.aalto.fi/triton/index.html and if you havent, go through the tutorials https://scicomp.aalto.fi/triton/index.html#tutorials. `Triton account required <https://scicomp.aalto.fi/triton/accounts.html>`__.
@@ -161,9 +144,9 @@ Summary table for remote data analysis workflows
 
 **Recommendation**: this is the best option when you need long-lasting parallel computing power and large data/confidential data access. This is also recommended from reproducibility/replicability perspective since, by fully removing human input, the workflow can be made fully replicable. 
 
-8. Non-interactive batch HPC computing at CSC
+7. Non-interactive batch HPC computing at CSC
 ---------------------------------------------
 
-**Description**: this case is similar to #7. You can read/learn more about this option at https://research.csc.fi/guides
+**Description**: this case is similar to #6. You can read/learn more about this option at https://research.csc.fi/guides
 
-**Pro/Cons/Recommendation**: see #7.
+**Pro/Cons/Recommendation**: see #6.
