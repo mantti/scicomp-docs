@@ -43,13 +43,13 @@ Summary table for remote data analysis workflows
      * Pros
      * Cons
      * Recommendation
-     * Narvi data Y/N
+     * Data on cluster
    * * 1. Own laptop/desktop computer
      * Can work from anywhere. Does not require internet connection.  You are in control.
-     * Not good for personal or confidential data. Computing resources might not be enough. Accessing large data remotely stored at Aalto might be problematic - you will end up having to copy a lot.  You have to manage software yourself.
+     * Not good for personal or confidential data. Computing resources might not be enough. Accessing large data remotely stored at anywhere else might be problematic - you will end up having to copy a lot.  You have to manage software yourself.
      * Excellent for prototyping, working on the go, doing tests, interactive work (e.g. making figures). Don’t use it with large data or confidential / personal data.
      * N
-   * * 2. TUNI workstation
+   * * 2. University workstation/laptop
      * Same as above, plus same tools available as TUNI employer.
      * Same as above.
      * Same as above.
@@ -58,16 +58,16 @@ Summary table for remote data analysis workflows
      * Computing happens on remote. Data access happens on remote, so it is more secure.
      * Computing resources and storage space are limited.
      * Excellent for prototyping, working on the go, doing tests, interactive work (e.g. making figures). More secure access to data.
-     * Y
-   * * 4. Interactive graphical session on narvi HPC (ssh -X `narvi-shell <https://wiki.eduuni.fi/display/tuttcsc/Narvi+Shell> `__)
+     * N
+   * * 4. Interactive graphical session on narvi HPC (ssh -X `narvi-shell <https://wiki.eduuni.fi/display/tuttcsc/Narvi+Shell>`)
      * Graphical programs.
      * Lost once your internet connection dies, needs fast internet connection.
      * If you need specific graphical applications which are only on Narvi.
      * Y
-   * * 5. Interactive command line session on Narvi HPC (ssh + sinteractive)
+   * * 5. Interactive command line session on Narvi HPC (ssh + srun)
      * Works from anywhere.  Can get lots of resources for a short time.
      * Limited time limits, must be used manually.
-     * A general workhorse once you get comfortable with shell - many people work here + #7.
+     * A general workhorse once you get comfortable with shell - many people work here + #6.
      * Y
    * * 6. Non-interactive batch HPC computing on Narvi (ssh + sbatch)
      * Largest resources, bulk computing
@@ -84,7 +84,12 @@ Summary table for remote data analysis workflows
 1. Own laptop/desktop computer
 ------------------------------
 
-**Description**: Here you are the administrator. You might be working from a cafe with your own laptop, or from home with a desktop. You should be able to install any tool you need. As an TUNI employer you get access to many nice commercial tools for your private computers. Visit: `Intra <https://intra.tuni.fi/handbook/2677/11307/3234?role=staff&university=uni>`__  and https://tuni.onthehub.com/  for some options. 
+**Description**: Here you are the administrator. You might be working from a
+cafe with your own laptop, or from home with a desktop. You should be able to
+install any tool you need. As an TUNI employer you get access to many nice
+commercial tools for your private computers. Visit: `Intra
+<https://intra.tuni.fi/handbook/2677/11307/3234?role=staff&university=uni>`__
+and https://tuni.onthehub.com/  for some options. 
 
 **Pros**: Computing freedom! You can work anywhere, you can work when there is no internet connection, you do not share the computing resources with other users so you can fully use the power of your computer.
 
