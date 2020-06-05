@@ -133,8 +133,7 @@ informal help session to get you started with the computing resources.
 
       * Aalto: (link above)
       * Helsinki:
-      * Tampere:
-            * `Narvi storage <https://narvi-docs.readthedocs.io/narvi/tut/storage.html>`__
+      * Tampere: `Narvi storage <https://narvi-docs.readthedocs.io/narvi/tut/storage.html>`__
 
     * :doc:`/triton/tut/interactive`
     * :doc:`/triton/tut/serial`
@@ -147,7 +146,7 @@ informal help session to get you started with the computing resources.
 
     * :doc:`/triton/tut/array`
     * :doc:`/triton/tut/gpu`
-      * Tampere: `Narvi GPU computing <https://narvi-docs.readthedocs.io/narvi/tut/gpu.html>`__
+      * Tampere: `Narvi GPU computing differences <https://narvi-docs.readthedocs.io/narvi/tut/gpu.html>`__
     * :doc:`/triton/tut/parallel`
 
   * Module #3.2 (1.5h): **HTCondor** (at Aalto) // lecture with demos
