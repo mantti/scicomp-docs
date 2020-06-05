@@ -43,7 +43,9 @@ University specific information:
 * `University of Helsinki <https://wiki.helsinki.fi/display/it4sci/HPC+SUMMER+KICKSTART>`__
 
 * Tampere: this course is recommended for all new Narvi users and also all
-  interested in HPC `Basic information is at Narvi page <https://wiki.eduuni.fi/display/tuttcsc/Narvi+Cluster>`__
+  interested in HPC. Most things should work with simply replacing triton 
+  -> narvi. Some differences in configuration are listed in 
+  `Narvi differences <https://narvi-docs.readthedocs.io/narvi/kickstart-diffs.html>`__
 
 
 Practical information
