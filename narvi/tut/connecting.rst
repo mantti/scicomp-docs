@@ -22,7 +22,7 @@ You can connect to ``narvi.tut.fi`` from everywhere with your private ssh-key.
 
 .. seealso::
 
-      The :doc:`shell crash course </scicomp/shell>` is a prerequisite
+      The `shell crash course <https://scicomp.aalto.fi/scicomp/shell>` is a prerequisite
       to this material.
 
 
@@ -75,7 +75,7 @@ settings so that you can connect quickly.
 Advanced options
 ----------------
 
-See the :doc:`advanced ssh information </scicomp/ssh>` to learn how
+See the `advanced ssh information <https://scicomp.aalto.fi/scicomp/ssh>` to learn how
 to log in without a password, automatically save your username 
 and more. It really will save you time.
 
@@ -102,4 +102,4 @@ Exercise
 What's next?
 ============
 
-The next tutorial is about :doc:`software and modules <modules>`.
+The next tutorial is about `software and modules <https://scicomp.aalto.fi/modules>`.
