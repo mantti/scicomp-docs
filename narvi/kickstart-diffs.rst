@@ -17,7 +17,7 @@ Quick list of differences
      * On Narvi
      * Additional info
    * * Applying for user account
-     * This is done via `<https://id.tuni.di>`__
+     * This is done via `<https://id.tuni.fi>`__
      * `Narvi user accounts <https://wiki.eduuni.fi/display/tuttcsc/User+Account>`__
    * * Accessing cluster
      * We are accessible from everywhere with proper ssh key.
