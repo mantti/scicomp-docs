@@ -47,7 +47,7 @@ requested as follows. ::
    #SBATCH --gres=gpu:1 --partition=gpu
 
 .. note::
-This is narvi-specifics, on Aalto's Triton you don't need to specify partition
+    This is narvi-specifics, on Aalto's Triton you don't need to specify partition
 
 You can request as many GPUs as you'd like using ``#SBATCH --gres=gpu:<n>``
 wherein ``n`` denotes the number of the requested GPUs.
