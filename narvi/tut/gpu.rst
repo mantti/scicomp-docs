@@ -81,8 +81,8 @@ We support the following machine learning frameworks out of the box:
 
 Please note that most of the pre-installed softwares have CUDA already present.
 Thus you **do not need to load CUDA** as a seperate module when loading these.
-See the :ref:`application list <application-list>` or :doc:`GPU
-computing reference <../usage/gpu>` for more details.
+See the :ref:`application list <application-list>` or `GPU
+computing reference <https://scicomp.aalto.fi/triton/usage/gpu/>` for more details.
 
 
 
@@ -142,7 +142,7 @@ When running a GPU job, you should check that the GPU is being fully
 utilized. Additionally, for the sake of troubleshooting and ensuring
 that GPU is executing your code, not GPUs, you can run an interactive job::
 
-   sinteractive --gres=gpu:1 --partition=gpu --time=1:00:00 --mem=1G -c 3
+   srun --pty --gres=gpu:1 --partition=gpu --time=1:00:00 --mem=1G -c 3 /bin/bash
 
 When assigned a node in the GPU partition, you can ``ssh`` to the node
 and run ``nvidia-smi``. You can find your process by e.g. using ``htop``
@@ -196,7 +196,7 @@ efficiently in a whole pipeline.
 
 .. seealso::
 
-   Please refer to the :doc:`small files <../usage/smallfiles>` page
+   Please refer to the `small files <https://scicomp.aalto.fi/triton/usage/smallfiles/>` page
    for more detailed information.
 
 If your data consists of individual files that are not too big,
@@ -245,7 +245,7 @@ Exercises
 What's next?
 ------------
 
-You can see the main article, :doc:`../usage/gpu`, for more
+You can see the main article, `GPU Computing <https://scicomp.aalto.fi/triton/usage/gpu/>`, for more
 detailed information regarding GPU computing,
 including examples of different machine learning frameworks.
 
